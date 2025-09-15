@@ -22,6 +22,9 @@ describe("String Calculator TDD Kata", () => {
 
       act(() => {
         result.current.setInput("");
+      });
+
+      act(() => {
         result.current.handleCalculate();
       });
 
@@ -34,6 +37,9 @@ describe("String Calculator TDD Kata", () => {
 
       act(() => {
         result.current.setInput("1");
+      });
+
+      act(() => {
         result.current.handleCalculate();
       });
 
@@ -46,6 +52,9 @@ describe("String Calculator TDD Kata", () => {
 
       act(() => {
         result.current.setInput("1,5");
+      });
+
+      act(() => {
         result.current.handleCalculate();
       });
 
@@ -59,6 +68,9 @@ describe("String Calculator TDD Kata", () => {
 
       act(() => {
         result.current.setInput("1,2,3,4,5");
+      });
+
+      act(() => {
         result.current.handleCalculate();
       });
 
@@ -70,6 +82,9 @@ describe("String Calculator TDD Kata", () => {
 
       act(() => {
         result.current.setInput("1,1,1,1,1,1,1,1,1,1");
+      });
+
+      act(() => {
         result.current.handleCalculate();
       });
 
@@ -83,6 +98,9 @@ describe("String Calculator TDD Kata", () => {
 
       act(() => {
         result.current.setInput("1\n2,3");
+      });
+
+      act(() => {
         result.current.handleCalculate();
       });
 
@@ -94,6 +112,9 @@ describe("String Calculator TDD Kata", () => {
 
       act(() => {
         result.current.setInput("1\n2\n3");
+      });
+
+      act(() => {
         result.current.handleCalculate();
       });
 
@@ -105,6 +126,9 @@ describe("String Calculator TDD Kata", () => {
 
       act(() => {
         result.current.setInput("1,2\n3,4");
+      });
+
+      act(() => {
         result.current.handleCalculate();
       });
 
@@ -118,6 +142,9 @@ describe("String Calculator TDD Kata", () => {
 
       act(() => {
         result.current.setInput("//;\n1;2");
+      });
+
+      act(() => {
         result.current.handleCalculate();
       });
 
@@ -129,6 +156,9 @@ describe("String Calculator TDD Kata", () => {
 
       act(() => {
         result.current.setInput("//|\n1|2|3");
+      });
+
+      act(() => {
         result.current.handleCalculate();
       });
 
@@ -140,6 +170,9 @@ describe("String Calculator TDD Kata", () => {
 
       act(() => {
         result.current.setInput("//[***]\n1***2***3");
+      });
+
+      act(() => {
         result.current.handleCalculate();
       });
 
@@ -151,6 +184,9 @@ describe("String Calculator TDD Kata", () => {
 
       act(() => {
         result.current.setInput("//[*][%]\n1*2%3");
+      });
+
+      act(() => {
         result.current.handleCalculate();
       });
 
@@ -164,6 +200,9 @@ describe("String Calculator TDD Kata", () => {
 
       act(() => {
         result.current.setInput("1,-2,3");
+      });
+
+      act(() => {
         result.current.handleCalculate();
       });
 
@@ -176,6 +215,9 @@ describe("String Calculator TDD Kata", () => {
 
       act(() => {
         result.current.setInput("1,-2,-3,4");
+      });
+
+      act(() => {
         result.current.handleCalculate();
       });
 
@@ -188,6 +230,9 @@ describe("String Calculator TDD Kata", () => {
 
       act(() => {
         result.current.setInput("-1,-2,-3");
+      });
+
+      act(() => {
         result.current.handleCalculate();
       });
 
@@ -202,6 +247,9 @@ describe("String Calculator TDD Kata", () => {
 
       act(() => {
         result.current.setInput("2,1001,3");
+      });
+
+      act(() => {
         result.current.handleCalculate();
       });
 
@@ -213,6 +261,9 @@ describe("String Calculator TDD Kata", () => {
 
       act(() => {
         result.current.setInput("1,2000,3,3000");
+      });
+
+      act(() => {
         result.current.handleCalculate();
       });
 
@@ -224,6 +275,9 @@ describe("String Calculator TDD Kata", () => {
 
       act(() => {
         result.current.setInput("1000,1001,2000");
+      });
+
+      act(() => {
         result.current.handleCalculate();
       });
 
@@ -237,6 +291,9 @@ describe("String Calculator TDD Kata", () => {
 
       act(() => {
         result.current.setInput("//;\n1;2\n3");
+      });
+
+      act(() => {
         result.current.handleCalculate();
       });
 
@@ -248,6 +305,9 @@ describe("String Calculator TDD Kata", () => {
 
       act(() => {
         result.current.setInput("1,,3");
+      });
+
+      act(() => {
         result.current.handleCalculate();
       });
 
@@ -259,6 +319,9 @@ describe("String Calculator TDD Kata", () => {
 
       act(() => {
         result.current.setInput("//[***][---][###]\n1***2---3###4");
+      });
+
+      act(() => {
         result.current.handleCalculate();
       });
 
@@ -272,6 +335,9 @@ describe("String Calculator TDD Kata", () => {
 
       act(() => {
         result.current.setInput(",,,");
+      });
+
+      act(() => {
         result.current.handleCalculate();
       });
 
@@ -283,6 +349,9 @@ describe("String Calculator TDD Kata", () => {
 
       act(() => {
         result.current.setInput(" 1 , 2 , 3 ");
+      });
+
+      act(() => {
         result.current.handleCalculate();
       });
 
@@ -294,6 +363,9 @@ describe("String Calculator TDD Kata", () => {
 
       act(() => {
         result.current.setInput("0,0,0");
+      });
+
+      act(() => {
         result.current.handleCalculate();
       });
 
@@ -305,6 +377,9 @@ describe("String Calculator TDD Kata", () => {
 
       act(() => {
         result.current.setInput("999,1000,1001,2000");
+      });
+
+      act(() => {
         result.current.handleCalculate();
       });
 
@@ -329,9 +404,12 @@ describe("String Calculator TDD Kata", () => {
 
       testCases.forEach(({ input, expected }) => {
         act(() => {
-          result.current.setInput(input);
-          result.current.handleCalculate();
-        });
+        result.current.setInput(input);
+      });
+
+      act(() => {
+        result.current.handleCalculate();
+      });
         expect(result.current.result).toBe(expected);
       });
     });
