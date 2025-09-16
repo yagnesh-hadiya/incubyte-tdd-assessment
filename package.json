@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://yagnesh-hadiya.github.io/incubyte-tdd-assessment",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
